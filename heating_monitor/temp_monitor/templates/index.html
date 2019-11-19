@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    <div class="container">
+        <h2>
+            Image Processing Book
+        </h2>
+        This application is intented to be used to analyze incoming images with other techniques as also to provide quick algorithm implemented via opencv
+    </div>
+
+    <span class="img-container"> <!-- Inline parent element -->
+        <img src="{% static 'img/example_background_xray_reels.png' %}" alt="Xray Drypack">
+    </span>
+    <div class="dash">
+        <a href='{% url "temp_plot" %}'>Dashboard</a>
+    </div>
+{% endblock %}

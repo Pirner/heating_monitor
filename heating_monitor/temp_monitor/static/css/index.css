@@ -1,0 +1,46 @@
+h2 {
+  font-size: 3em;
+  margin-top: 40px;
+  text-align: center;
+  letter-spacing: -2px;
+}
+
+h3 {
+  font-size: 1.7em;
+  font-weight: 100;
+  margin-top: 30px;
+  text-align: center;
+  letter-spacing: -1px;
+  color: #999;
+}
+
+
+
+.img-container {
+    text-align: center;
+    display: block;
+}
+
+.center-div {
+    display: flex;
+    justify-content: center;
+    font-size: 1.7em;
+    font-weight: 100;
+}
+
+.dash {
+    text-align: center;
+}
+
+div.dash a:link, a:visited {
+  background-color: #007AC9;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+div.dash a:hover, a:active {
+  background-color: red;
+}
