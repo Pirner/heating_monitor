@@ -26,10 +26,10 @@ def write_temps_to_logs():
         lines = f.readlines()
         f.close()
         set_trace()
-	tempStr = lines[1].find('t=')
-	tempCels = 500
-    	# Ich überprüfe ob die Temperatur gefunden wurde.
-    	if temperaturStr != -1 :
-        	tempData = lines[1][tempStr+2:]
-        	tempCels = float(tempData) / 1000.0
-	print('temperature is: ', tempCels)
+        temp_str = lines[1].find('t=')
+        temp_cels = 0
+        # check if temperature was written
+        if temp_str != -1 :
+            temp_data = lines[1][temp_str+2:]
+            temp_cels = float(temp_data) / 1000.0
+        print('temperature is: ', temp_cels)
