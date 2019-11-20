@@ -1,7 +1,7 @@
 import os
 
-from heating_monitor.temp_monitor import models
-from heating_monitor.heating_monitor import settings
+from . import models
+from heating_monitor import settings
 
 
 def check_log_directory():
@@ -21,8 +21,15 @@ def write_temps_to_logs():
     from pudb import set_trace
     for sensor in sensors:
 
-        sensor_file = os.path.join('sys', 'bus', 'w1', 'devices', sensor.name, 'w1_slave')
+        sensor_file = os.path.join('/','sys', 'bus', 'w1', 'devices', sensor.name, 'w1_slave')
         f = open(sensor_file, 'r')
         lines = f.readlines()
         f.close()
         set_trace()
+	tempStr = lines[1].find('t=')
+	tempCels = 500
+    	# Ich überprüfe ob die Temperatur gefunden wurde.
+    	if temperaturStr != -1 :
+        	tempData = lines[1][tempStr+2:]
+        	tempCels = float(tempData) / 1000.0
+	print('temperature is: ', tempCels)
