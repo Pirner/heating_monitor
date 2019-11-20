@@ -32,6 +32,8 @@ def temp_plot(request):
     grid(True)
     # Store image in a string buffer
     # buffer = StringIO()
+    # from pudb import set_trace
+    # set_trace()
     buffer = BytesIO()
     canvas = pylab.get_current_fig_manager().canvas
     canvas.draw()
