@@ -13,6 +13,28 @@
         </div>
 
     </div>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Last_Value</th>
+                <th>Hardware-ID</th>
+            </tr>
+         <thead>
+        <tbody>
+
+
+        {% for temp_sensor in object_list %}
+            <td>{{ temp_sensor.name }} </td>
+            <td>{{ temp_sensor.description }} </td>
+            <td>{{ temp_sensor.last_temperature }} </td>
+            <td>{{ temp_sensor.hw_id }} </td>
+        {% endfor %}
+        </tbody>
+    <table/>
     <div class="dash">
         <a href='{% url "temp_plot" %}'>Sensor Plot</a>
     </div>
