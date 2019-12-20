@@ -62,7 +62,7 @@ def check_all_w1_devices():
         print(filtered_entries)
         print('\n\n')
 
-        for entry in entries:
+        for entry in filtered_entries:
             try:
                 sensor_file = os.path.join('/','sys', 'bus', 'w1', 'devices', entry, 'w1_slave')
                 f = open(sensor_file, 'r')
