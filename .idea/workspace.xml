@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="43c75d3a-40dc-4b19-983a-036a009eec52" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/heating_monitor/temp_monitor/templates/view_sensors.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heating_monitor/temp_monitor/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/heating_monitor/temp_monitor/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heating_monitor/temp_monitor/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/heating_monitor/temp_monitor/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heating_monitor/temp_monitor/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/heating_monitor/temp_monitor/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heating_monitor/temp_monitor/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/heating_monitor/temp_monitor/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,6 +17,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/heating_monitor/temp_monitor/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/heating_monitor/temp_monitor/templates/view_sensors.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="124" selection-start-line="11" selection-start-column="124" selection-end-line="11" selection-end-column="124" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/heating_monitor/temp_monitor/utils.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -26,14 +52,30 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/heating_monitor/temp_monitor/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="44" />
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/heating_monitor/temp_monitor/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+            <state relative-caret-position="435">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/heating_monitor/temp_monitor/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,23 +110,14 @@
         <option value="$PROJECT_DIR$/heating_monitor/templates/base.html" />
         <option value="$PROJECT_DIR$/heating_monitor/templates/index.html" />
         <option value="$PROJECT_DIR$/heating_monitor/heating_monitor/settings.py" />
-        <option value="$PROJECT_DIR$/heating_monitor/temp_monitor/templates/base.html" />
         <option value="$PROJECT_DIR$/heating_monitor/temp_monitor/static/css/index.css" />
-        <option value="$PROJECT_DIR$/heating_monitor/temp_monitor/urls.py" />
         <option value="$PROJECT_DIR$/heating_monitor/temp_monitor/models.py" />
-        <option value="$PROJECT_DIR$/heating_monitor/temp_monitor/views.py" />
         <option value="$PROJECT_DIR$/heating_monitor/temp_monitor/utils.py" />
         <option value="$PROJECT_DIR$/heating_monitor/temp_monitor/templates/index.html" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/heating_monitor.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/heating_monitor/temp_monitor/templates/base.html" />
+        <option value="$PROJECT_DIR$/heating_monitor/temp_monitor/views.py" />
+        <option value="$PROJECT_DIR$/heating_monitor/temp_monitor/urls.py" />
+        <option value="$PROJECT_DIR$/heating_monitor/temp_monitor/templates/view_sensors.html" />
       </list>
     </option>
   </component>
@@ -214,16 +247,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/heating_monitor/temp_monitor/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/heating_monitor/heating_monitor/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -235,16 +258,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="23" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/heating_monitor/temp_monitor/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -269,9 +282,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/heating_monitor/temp_monitor/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/heating_monitor/temp_monitor/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="349">
@@ -284,8 +294,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/heating_monitor/temp_monitor/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="12" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="12" />
+        <state relative-caret-position="435">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heating_monitor/temp_monitor/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heating_monitor/temp_monitor/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heating_monitor/temp_monitor/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="37" column="26" lean-forward="true" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/heating_monitor/temp_monitor/templates/view_sensors.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="124" selection-start-line="11" selection-start-column="124" selection-end-line="11" selection-end-column="124" />
         </state>
       </provider>
     </entry>

@@ -35,6 +35,15 @@ class IndexTempSensorListView(ListView):
         context['now'] = timezone.now()
         return context
 
+def view_sensors(request):
+    x = 5
+    template = loader.get_template('view_sensors.html')
+    context = {
+        'x': x,
+    }
+    return HttpResponse(template.render(context, request))
+
+
 
 def temp_plot(request):
     # Construct the graph

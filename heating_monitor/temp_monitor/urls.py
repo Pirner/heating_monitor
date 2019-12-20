@@ -7,4 +7,5 @@ urlpatterns = [
     #path('temp_plot/', views.temp_plot, name='temp_plot'),
     path('', views.IndexTempSensorListView.as_view(), name='index'),
     path('temp_plot/', views.temp_plot, name='temp_plot'),
+    path('view_sensor/', views.view_sensors, name='view_sensor'),
 ]
