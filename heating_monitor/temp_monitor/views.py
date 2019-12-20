@@ -36,11 +36,12 @@ class IndexTempSensorListView(ListView):
         return context
 
 def view_sensors(request):
-    utils.check_all_w1_devices()
+    sensor_vals = utils.check_all_w1_devices()
     x = 5
     template = loader.get_template('view_sensors.html')
     context = {
         'x': x,
+        'sensors': sensor_vals,
     }
     return HttpResponse(template.render(context, request))
 

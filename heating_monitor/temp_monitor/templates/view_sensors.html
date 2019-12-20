@@ -18,19 +18,16 @@
     <table>
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Last_Value</th>
                 <th>Hardware-ID</th>
+                <th>Last Value</th>
             </tr>
          <thead>
         <tbody>
-        {% for temp_sensor in object_list %}
+        {% for temp_sensor in sensors %}
             <tr>
-                <td>{{ temp_sensor.name }} </td>
-                <td>{{ temp_sensor.description }} </td>
-                <td>{{ temp_sensor.last_temperature }} </td>
-                <td>{{ temp_sensor.hw_id }} </td>
+                {% for val in temp_sensor %}
+                    <td>{{ val }} </td>
+                {% endfor %}
             </tr>
         {% endfor %}
         </tbody>
