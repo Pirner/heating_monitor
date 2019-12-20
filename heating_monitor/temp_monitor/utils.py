@@ -47,6 +47,7 @@ def write_temps_to_logs():
 
 def check_all_w1_devices():
     check_log_directory()
+    result = []
     try:
         # sensors = models.TempSensor.objects.all()
         w1_dir = os.path.join('/', 'sys', 'bus', 'w1', 'devices')
@@ -73,15 +74,13 @@ def check_all_w1_devices():
                 if temp_str != -1 :
                     temp_data = lines[1][temp_str+2:]
                     temp_cels = float(temp_data) / 1000.0
-                    sensor.last_temperature = temp_cels
-                    sensor.save()
-                else:
-                    sensor.last_temperature = -1.0
-                    sensor.save()
+
                 print('temperature is: ', temp_cels)
+                result.append((entry, temp_cels))
+
             except Exception as sub_e:
-                sensor.last_temperature = -1.0
-                sensor.save()
                 print(sub_e)
     except Exception as e:
         print(e)
+
+    return result
