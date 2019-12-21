@@ -28,6 +28,7 @@ class IndexTempSensorListView(ListView):
     # scan over the "to showing images and compute their show image TODO
     utils.write_temps_to_logs()
     def get_queryset(self):
+        utils.write_temps_to_logs()
         return models.TempSensor.objects.all()
 
     def get_context_data(self, **kwargs):
