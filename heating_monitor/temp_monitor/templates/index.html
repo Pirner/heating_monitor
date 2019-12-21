@@ -28,9 +28,7 @@
         {% for temp_sensor in object_list %}
             <tr>
                 <td>{{ temp_sensor.name }} </td>
-                <td>{{ temp_sensor.description }} </td>
                 <td>{{ temp_sensor.last_temperature }} </td>
-                <td>{{ temp_sensor.hw_id }} </td>
             </tr>
         {% endfor %}
         </tbody>
