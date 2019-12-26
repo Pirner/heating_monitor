@@ -7,3 +7,6 @@ class TempSensor(models.Model):
     name = models.CharField(max_length=256)
     last_temperature = models.FloatField(default=0.0)
     hw_id = models.CharField(max_length=256, default='Not_Defined')
+
+    def __str__(self):
+        return self.name
