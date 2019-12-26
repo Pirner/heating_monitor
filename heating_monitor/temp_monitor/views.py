@@ -23,7 +23,7 @@ class IndexTempSensorListView(ListView):
     model = models.TempSensor
     template_name = 'index.html'
     temp_sensor = models.TempSensor.objects.all()
-    paginate_by = 3
+    # paginate_by = 3
     # paginator = Paginator(image_list, 15)
     # scan over the "to showing images and compute their show image TODO
     utils.write_temps_to_logs()
