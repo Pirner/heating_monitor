@@ -9,10 +9,11 @@ def check_log_directory():
         try:
             os.mkdir(settings.TEMP_LOG_FILE_LOCATION)
         except OSError:
-            print("Creation of the directory %s failed" % settings.TEMP_LOG_FILE_LOCATION)
+            # print("Creation of the directory %s failed" % settings.TEMP_LOG_FILE_LOCATION)
             return False
         else:
-            print("Successfully created the directory %s " % settings.TEMP_LOG_FILE_LOCATION)
+            # print("Successfully created the directory %s " % settings.TEMP_LOG_FILE_LOCATION)
+            pass
     return True
 
 
@@ -37,13 +38,13 @@ def write_temps_to_logs():
                 else:
                     sensor.last_temperature = -1.0
                     sensor.save()
-                print('temperature is: ', temp_cels)
+                # print('temperature is: ', temp_cels)
             except Exception as sub_e:
                 sensor.last_temperature = -1.0
                 sensor.save()
-                print(sub_e)
+                # print(sub_e)
     except Exception as e:
-        print(e)
+        # print(e)
 
 def check_all_w1_devices():
     check_log_directory()
@@ -58,9 +59,9 @@ def check_all_w1_devices():
             if not ('w1_bus' in entry):
                 filtered_entries.append(entry)
 
-        print('\n\nfiltered entries')
-        print(filtered_entries)
-        print('\n\n')
+        # print('\n\nfiltered entries')
+        # print(filtered_entries)
+        # print('\n\n')
 
         for entry in filtered_entries:
             try:
@@ -75,12 +76,14 @@ def check_all_w1_devices():
                     temp_data = lines[1][temp_str+2:]
                     temp_cels = float(temp_data) / 1000.0
 
-                print('temperature is: ', temp_cels)
+                # print('temperature is: ', temp_cels)
                 result.append((entry, temp_cels))
 
             except Exception as sub_e:
-                print(sub_e)
+                # print(sub_e)
+                pass
     except Exception as e:
-        print(e)
+        # print(e)
+        pass
 
     return result
