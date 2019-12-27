@@ -45,6 +45,7 @@ def write_temps_to_logs():
                 # print(sub_e)
     except Exception as e:
         # print(e)
+        pass
 
 def check_all_w1_devices():
     check_log_directory()
